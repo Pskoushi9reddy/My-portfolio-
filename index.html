@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SKR Portfolio</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <a href="#" class="to-top"><img src="images/up-arrow.png" alt="totop"></a>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1 style="font-weight: 500;">S<span style="color:red">K</span>R <span style="color:white;">PortFolio</span></h1>
+                <ul id="sidemenu">
+                    <li><a href="#first">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <img src="images/close (1).png" alt="cross" onclick="closemenu()">
+                </ul>
+                <img src="images/menu (1).png" alt="menu" onclick="openmenu()">
+            </nav>
+        </div>
+    </div>
+    <!-- Home -->
+    <div id="first">
+        <div class="container1">
+            <div class="bgimg">
+                <img src="images/P.Saran Koushik Reddy.jpg" alt="koushik">
+            </div>
+            <div class="left">
+                <p>Hi, My name is <span class="color">Saran Koushik Reddy</span>
+                    <br>I'm 3rd Year BTech-Chemical Engineering student<br>at <span class="col">IIT BHU Varanasi</span></p>
+            </div>
+        </div>
+    </div>
+    <!-- <hr style="color: rgb(39, 65, 106) ;margin: 10px 10px;"> -->
+    <!-- About -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="hello1">
+                    <img src="images/P.SARAN KOUSHIK REDDY-min-min.jpg" alt="my photo">
+                </div>
+                <div class="hello2">
+                    <h2><span style="text-decoration: underline;font-weight: bold;font-size:40px;color: white;">About  Myself</span></h2>
+                    <p>Hello, I'm <span style="color: rgb(24, 176, 166);font-weight: bold;">P.Saran Koushik Reddy</span>, a third-year BTech student at <span style="color: rgb(165, 62, 151);">IIT BHU Varanasi</span>, specializing in Chemical Engineering.
+                    Hailing from Rajahmundry in the East Godavari District of Andhra Pradesh,
+                    I am a passionate explore and master new technologies. My current focus is on full-stack web development, 
+                    with an emphasis on enhancing my technical repertoire through content-rich tech resources.
+                    I'm delving into <span style="text-decoration: underline;font-weight: bold;color: white;">Django</span> , <span style="text-decoration: underline;font-weight: bold;color: white;">Django REST framework</span> , the multifaceted Python web framework for backend development.
+                    Moreover, I'm about to pursue knowledge in <span style="text-decoration: underline;font-weight: bold;color: white;">Machine Learning and Deep Learning</span> , aspiring to gain a foundational understanding of Artificial Intelligence. 
+                    My interests extend to the realms of electronics and global tech stacks. In my leisure time, I enjoy drawing, particularly sketching and figure drawing, and playing badminton. Additionally, I have a keen interest in automobiles and their functionalities, always eager to learn more about this dynamic field.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-content active-tab" id="skills">
+                        <ul>
+                            <li><span style="font-size:25px;">Languages:</span><br><span style="color: white;font-size: 18px;">C++, Familiar with Python<br>HTML, CSS, Javascript(Familiar with)</span></li>
+                            <li><span style="font-size:25px;">Frameworks:</span><br><span style="color: white;font-size: 18px;">ReactJS, Django and Django REST framework, ExpressJS, Tailwind CSS(Basics)</span></li>
+                            <li><span style="font-size:25px;">Tools and Libraries:</span><br><span style="color: white;font-size: 18px;">Git and GitHub (Version control tools), Node.js ,VS Code</span></li>
+                            <li><span style="font-size:25px;">Databases:</span><br><span style="color: white;font-size: 18px;">PostgreSQL(Relational), MongoDB(Non-Relational)</span></li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="education">
+                        <div class="tab-content1">
+                            <ul>
+                                <li style="--accent-color:rgb(39, 65, 106)">
+                                    <div class="date">June'17 - April'20</div>
+                                    <div class="title"><img src="images/Shirdisai-Vidhya-nikethan-logo.png" alt=""></div>
+                                    <div class="descr"><span style="color: white;font-weight: bold;">High School (AP SSC)</span><br>SSC Percentage: 96.67%</div>
+                                </li>
+                                <li style="--accent-color:#000080">
+                                    <div class="date">June'20 - May'22</div>
+                                    <div class="title"><img src="images/sssjc.png" alt="cbse"></div>
+                                    <div class="descr"><span style="color: white;font-weight: bold;">Higher Secondary Course (CBSE)</span><br>CBSE Percentage: 95.00%</div>
+                                </li>
+                                <li style="--accent-color:orange">
+                                    <div class="date">April'20 - August'22</div>
+                                    <div class="title"><img src="images/Lakshya-Logo.png" alt="JEE"></div>
+                                    <div class="descr"><span style="color: white;font-weight: bold;">Joint Entrance Examination Preparation (JEE)</span><br>JEE Main CRL: 10428<br>JEE Advanced CRL: 10511</div>
+                                </li>
+                                <li style="--accent-color:rgb(112, 51, 104)">
+                                    <div class="date">October'22 - May'26</div>
+                                    <div class="title"><img src="images/IIT-Logo.png" alt="iit bhu"></div>
+                                    <div class="descr" style="color: white;font-weight: bold;">Pursuing BTech in Chemical Engineering</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <hr style="color: rgb(39, 65, 106) ;margin: 10px 10px;"> -->
+
+    <!-- Projects -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">MY Projects</h1>
+            <div class="work-list">
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1><br><br>
+                    <h3>Get in Touch:</h3>
+                    <p>Thank you for visiting my personal website!<br>Feel free to reach out to me using the<br>contact form.</p>
+                    <p><a href="https://www.google.com/maps/place/Rajamahendravaram,+Andhra+Pradesh/@16.9872987,81.8063581,12z/data=!3m1!4b1!4m6!3m5!1s0x3a37a3f2440c9fff:0x86b24503e305ca21!8m2!3d17.0005383!4d81.8040345!16zL20vMDQ4cHA3?authuser=0&entry=ttu"><img src="images/map.png" alt="map"></a><span style="color: red;">Location:</span><br><span style="margin-left:40px;">Rajahmundry, East Godavari, Andhra Pradesh</span></p>
+                    <p><img src="images/gmail.png" alt="email"><span style="color: red;">Email Id:</span><br><span style="margin-left:40px;">sarankoushi239@gmail.com</span></p>
+                    <p><img src="images/phone-call.png" alt="phone"><span style="color: red;">Mobile Number:</span><br><span style="margin-left:40px;">9381558114</span></p>
+                    <p style="color: #ff004f;margin-bottom: -10px;margin-top: 40px;">Do Visit the Links below:</p>
+                    <div class="social-icons">
+                        <a href="https://github.com/Pskoushi9reddy"><img src="images/github (1).png" alt="github"></a>
+                        <a href="https://www.linkedin.com/in/p-saran-koushik-reddy-137455257/"><img src="images/linkedin (1).png" alt="linkedin"></a>
+                        <a href="https://www.instagram.com/skoushi_.239._reddy/"><img src="images/instagram (2).png" alt="instagram"></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form method="post" action="" name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Made with <img src="images/heart.png" alt="heart"> by <span style="color: rgb(26, 109, 151);">KOUSHIK</span> | © Copyrights reserved.</p>
+        </div>
+    </div>
+
+    <!-- <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script> -->
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-content");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link")
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+    <script>
+        const toTop=document.querySelector(".to-top");
+        window.addEventListener("scroll",()=>{
+            if(window.pageYOffset>60){
+                toTop.classList.add("active");
+            }
+            else{
+                toTop.classList.remove("active");
+            }
+        })
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzJx2Rju0UUYtT1CMXnbQl7gCtEvuG1RlwR94IZCzFyLWhyOnYWt5CJPehPMCYRgJ8/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message Sent Successfully"
+                setTimeout(function(){
+                    msg.innerHTML=""
+                },2000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+</html>
