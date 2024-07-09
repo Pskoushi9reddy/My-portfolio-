@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SKR Portfolio</title>
+    <link style="height:auto;width: auto;" rel="icon" href="images/portfolio.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css" type="text/css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,21 +13,23 @@
 </head>
 <body>
     <a href="#" class="to-top"><img src="images/up-arrow.png" alt="totop"></a>
-    <div id="header">
-        <div class="container">
-            <nav>
-                <h1 style="font-weight: 500;">S<span style="color:red">K</span>R <span style="color:white;">PortFolio</span></h1>
-                <ul id="sidemenu">
-                    <li><a href="#first">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#portfolio">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <img src="images/close (1).png" alt="cross" onclick="closemenu()">
-                </ul>
-                <img src="images/menu (1).png" alt="menu" onclick="openmenu()">
-            </nav>
+    <header class="header">
+        <div class="logo">
+            <h1 style="margin-left: 30px;"><span style="font-size: 50px;">S<span style="color:red">K</span>R</span>&nbsp;&nbsp;<span style="color:white;font-size: 40px;">PortFolio</span></h1>
         </div>
-    </div>
+        <div class="navigation">
+            <input type="checkbox" class="toggle-menu">
+            <div class="hamburger"></div>
+            <ul class="menu">
+                <li><a href="#first">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <!-- <img src="images/close (1).png" alt="cross" onclick="closemenu()"> -->
+            </ul>
+            <!-- <img src="images/menu (1).png" alt="menu" onclick="openmenu()"> -->
+        </div>
+    </header>
     <!-- Home -->
     <div id="first">
         <div class="container1">
@@ -34,7 +37,7 @@
                 <img src="images/P.Saran Koushik Reddy.jpg" alt="koushik">
             </div>
             <div class="left">
-                <p>Hi, My name is <span class="color">Saran Koushik Reddy</span>
+                <p><span style="font-size: 2rem;">Hi, My name is</span><br> <span class="color">Saran Koushik Reddy</span>
                     <br>I'm 3rd Year BTech-Chemical Engineering student<br>at <span class="col">IIT BHU Varanasi</span></p>
             </div>
         </div>
@@ -48,14 +51,14 @@
                     <img src="images/P.SARAN KOUSHIK REDDY-min-min.jpg" alt="my photo">
                 </div>
                 <div class="hello2">
-                    <h2><span style="text-decoration: underline;font-weight: bold;font-size:40px;color: white;">About  Myself</span></h2>
+                    <h1><span style="text-decoration: underline;font-weight: bold;font-size:40px;color: white;">About  Myself</span></h1>
                     <p>Hello, I'm <span style="color: rgb(24, 176, 166);font-weight: bold;">P.Saran Koushik Reddy</span>, a third-year BTech student at <span style="color: rgb(165, 62, 151);">IIT BHU Varanasi</span>, specializing in Chemical Engineering.
-                    Hailing from Rajahmundry in the East Godavari District of Andhra Pradesh,
-                    I am a passionate explore and master new technologies. My current focus is on full-stack web development, 
-                    with an emphasis on enhancing my technical repertoire through content-rich tech resources.
-                    I'm delving into <span style="text-decoration: underline;font-weight: bold;color: white;">Django</span> , <span style="text-decoration: underline;font-weight: bold;color: white;">Django REST framework</span> , the multifaceted Python web framework for backend development.
-                    Moreover, I'm about to pursue knowledge in <span style="text-decoration: underline;font-weight: bold;color: white;">Machine Learning and Deep Learning</span> , aspiring to gain a foundational understanding of Artificial Intelligence. 
-                    My interests extend to the realms of electronics and global tech stacks. In my leisure time, I enjoy drawing, particularly sketching and figure drawing, and playing badminton. Additionally, I have a keen interest in automobiles and their functionalities, always eager to learn more about this dynamic field.</p>
+                    Hailing from Rajahmundry in the East Godavari Dist of Andhra Pradesh,
+                    I am a passionate to master new technologies. My current focus is on full-stack web development, 
+                    with an emphasis on enhancing my technical knowledge through content-rich tech resources.Established a great working practice over frontend part in <span style="text-decoration: underline;font-weight: bold;color: white;">Django</span> , in practice with <span style="text-decoration: underline;font-weight: bold;color: white;">React JS, (HTML,CSS & few frameworks)</span>
+                    I'm delving into <span style="text-decoration: underline;font-weight: bold;color: white;">Django</span> , in practice with <span style="text-decoration: underline;font-weight: bold;color: white;">Django REST framework</span> , the multifaceted Python web framework for backend development.
+                    Moreover, I'm keen and curious to pursue knowledge in <span style="text-decoration: underline;font-weight: bold;color: white;">Machine Learning & Deep Learning & Natural Language Processing(NLP)</span> , aspiring to gain a foundational understanding of Artificial Intelligence. 
+                    My interests extend to the realms of electronics and global tech stacks. In my leisure time, I enjoy drawing, particularly sketching and figure drawing, and playing badminton. Additionally, I have a keen interest in automobiles and their functionalities.</p>
                     <div class="tab-titles">
                         <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
                         <p class="tab-links" onclick="opentab('education')">Education</p>
@@ -103,10 +106,34 @@
     <!-- Projects -->
     <div id="portfolio">
         <div class="container">
-            <h1 class="sub-title">MY Projects</h1>
+            <h1 style="text-decoration: underline;" class="sub-title">MY Projects</h1>
             <div class="work-list">
-
+                <div class="work">
+                    <img style="height: 560px;" src="images/Light Color Aesthetic To Do List Today Instagram Story.png" alt="todo">
+                    <div class="layer">
+                        <h3>ToDo List</h3>
+                        <p>ToDo List, an intuitive and efficient task manager designed to streamline your daily activities and responsibilities. Built with the ReactJS framework and powered by Vite, this application ensures a seamless and responsive user experience.</p>
+                        <a href="#"><img src="images/external-link (4).png" alt="link"></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img style="width: 1414px;height: 560px;" src="images/Library-Management-System.png" alt="ecom">
+                    <div class="layer">
+                        <h3>Library Management System</h3>
+                        <p>An E-library management system website built using Django(python web framework) and it's powerful ORM for seamless database interactions using POstgreSQL, ensuring efficient and dynamic management of both Admin and Student records.</p>
+                        <a href="#"><img src="images/external-link (4).png" alt="link"></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/Gradient Minimalist Graphic Design Portfolio Cover Page.png" alt="portfolio">
+                    <div class="layer">
+                        <h3>My Portfolio</h3>
+                        <p>It is a Portfolio website built using HTML, CSS, JS and is smooth website with standard animations to get enhanced info about me</p>
+                        <a href="#"><img src="images/external-link (4).png" alt="link"></a>
+                    </div>
+                </div>
             </div>
+            <a href="https://github.com/Pskoushi9reddy" class="btn">Visit my GitHub</a>
         </div>
     </div>
 
@@ -115,7 +142,7 @@
         <div class="container">
             <div class="row">
                 <div class="contact-left">
-                    <h1 class="sub-title">Contact Me</h1><br><br>
+                    <h1 style="text-decoration: underline;" class="sub-title">Contact Me</h1><br><br>
                     <h3>Get in Touch:</h3>
                     <p>Thank you for visiting my personal website!<br>Feel free to reach out to me using the<br>contact form.</p>
                     <p><a href="https://www.google.com/maps/place/Rajamahendravaram,+Andhra+Pradesh/@16.9872987,81.8063581,12z/data=!3m1!4b1!4m6!3m5!1s0x3a37a3f2440c9fff:0x86b24503e305ca21!8m2!3d17.0005383!4d81.8040345!16zL20vMDQ4cHA3?authuser=0&entry=ttu"><img src="images/map.png" alt="map"></a><span style="color: red;">Location:</span><br><span style="margin-left:40px;">Rajahmundry, East Godavari, Andhra Pradesh</span></p>
@@ -198,5 +225,18 @@
             .catch(error => console.error('Error!', error.message))
         })
     </script>
+    <!-- <script>
+        document.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+
+            if(window.screenY>0)
+            {
+                nav.classList.add('scrolled');
+            }
+            else{
+                nav.classList.remove('scrolled');
+            }
+        });
+    </script> -->
 </body>
 </html>
