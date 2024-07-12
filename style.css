@@ -257,6 +257,11 @@ transform: translate(-50%, -50%);
 font-size: 3rem;
 line-height: 70px;
 }
+
+.left p .king {
+  font-size: 3.5rem;
+}
+
 /* #first div {
   width: 30%;
 } */
@@ -272,14 +277,10 @@ left: 10%;
   /* flex-basis: 60%; */
   /* margin-top: -100px; */
 
-.color {
-  color: rgb(21, 128, 190);
-  font-weight: bold;
-}
-
 .col {
-  color:rgb(165, 62, 151);
+  color:rgb(103, 23, 93);
   font-weight: bold;
+  font-size: 3.5rem;
 }
 
 /* about */
@@ -856,7 +857,15 @@ top: 70%;
 left: 50%;
 transform: translate(-50%, -50%);
 font-size: 1.75rem;
-line-height: 50px;
+line-height: 40px;
+}
+
+.left p .king {
+  font-size: 2rem;;
+}
+
+.col {
+  font-size: 2rem;;
 }
 
   .hello1 img {
