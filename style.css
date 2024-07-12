@@ -296,7 +296,7 @@ margin: 45px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin-top: 20px;
+  margin-top: -40px;
 }
 
 .hello1 {
@@ -538,7 +538,7 @@ ul li .descr::before {
 
 /* projects */
 #portfolio {
-margin: 10px;
+  margin: 10px;
 }
 
 .work-list {
@@ -585,14 +585,14 @@ transition: height 0.5s;
 .layer h3 {
 font-weight: 600;
 margin-bottom: 20px;
-color: whitesmoke;
+color: rgb(255, 217, 0);
 text-decoration:underline;
 font-size: 25px;
 }
 
 .layer a {
 margin-top: 20px;
-background: transparent;
+background:black;
 border-radius: 50%;
 padding: 1px;
 }
@@ -642,6 +642,7 @@ background: rgb(171, 16, 16);
 
 .contact-left h1 {
   margin-left: 10px;
+  margin-top: 30px;
 }
 
 .contact-left h3 {
@@ -687,6 +688,7 @@ color: white;
 
 .contact-right form {
   width: 100%;
+  margin-top: 65px;
 }
 
 form input, form textarea {
@@ -880,6 +882,11 @@ line-height: 50px;
     margin-left: 10px;
   } */
 
+  .layer a img {
+    height: 28px;
+    width: 28px;
+  }
+
   .contact-left,.contact-right {
     flex-basis: 100%;
     margin: 0px;
@@ -887,6 +894,7 @@ line-height: 50px;
 
   .contact-right {
     margin-bottom: -60px;
+    margin-top: -40px;
   }
   
   .copyright {
